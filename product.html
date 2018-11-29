@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Theme</title>
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/business-casual.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
+   <script>
+    $(function(){
+
+      $(".btn_wrap button").eq(0).addClass("active");
+
+      $(".btn_wrap button").click(function(e){
+        $(".btn_wrap button").removeClass();
+        $(this).addClass("active")
+      })
+
+      $(".btn0").click(function(){
+        $(".card").css({top:0, opacity:0}).hide();
+        $(".card").show().each(function(index){
+          $(this).delay(100*index).animate({top:20,opacity:1})
+        })
+      })
+      $(".btn1").click(function(){
+        $(".card").css({top:0, opacity:0}).hide();
+        $(".card.one").show().each(function(index){
+          $(this).delay(100*index).animate({top:20,opacity:1})
+        });
+      })
+      $(".btn2").click(function(){
+        $(".card").css({top:0, opacity:0}).hide();
+        $(".card.two").show().each(function(index){
+          $(this).delay(100*index).animate({top:20,opacity:1})
+        })
+      })
+      $(".btn3").click(function(){
+        $(".card").css({top:0, opacity:0}).hide();
+        $(".card.three").show().each(function(index){
+          $(this).delay(100*index).animate({top:20,opacity:1})
+        })
+      })
+    
+    })
+  </script>
+  </head>
+
+  <body>
+  <style>
+
+    #mainNav .container{width: 70%;border: 2.5px solid #595959;padding: 4px;background: rgba(255,255,255,0.8);}
+    #navbarResponsive div a{font-size: 14px;text-align: center;}
+    #navbarResponsive div{margin-top: 10px;}
+
+
+.hbox{position: absolute;top: 0;width: 100%;}
+    .hbox ul{float: right;background: rgba(255,255,255,0.3);}
+    .hbox ul:after{content: "";display: block;clear: both}
+    .hbox li{float: left; padding: 10px;}
+    .hbox a{display: block;font-weight: bold;font-size: 12px}
+
+  .bcontainer{width: 1000px;margin: 0 auto;}
+    .bcontainer:after{content: "";display: block;clear: both;}
+    .card{border-radius: 5px;width: 25%;float: left;
+      border: 1px solid #eee;position: relative;}
+    .card img{border-radius: 5px;border: none;}
+    .card_body{padding: 20px;}
+    .card_title{font-size: 18px;margin-bottom: 10px;}
+    .card_text{font-size: 14px;margin-bottom: 10px;}
+    #btn{padding: 5px 10px;border-radius: 5px;text-align: center;width: 50px;}
+    #btn a{color: #fff}
+
+    .btn_wrap{width: 1000px;margin: 0 auto;text-align: center;margin-top: 50px;margin-bottom: 50px;}
+    .btn_wrap button{border: none;height: 40px;padding: 0 10px;border-right: 5px;}
+    .btn_wrap button.active{background: #aaf;}
+
+  </style>
+   
+    <div class="hbox">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">장바구니</a></li>
+        </ul>
+      </div>
+    <div class="header">
+     
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark p-2 mt-5" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand logo text-uppercase text-expanded font-weight-bold ml-5" href="index.html">cosmetic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto nav">
+            <li class="nav-item active px-lg-4 dropdown">
+              <a class="nav-link text-expanded dropdown-toggle" data-toggle="dropdown">SKIN CARE</a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">피부타입별</a>
+                <a href="#" class="dropdown-item">상품타입별</a>
+              </div>
+            
+            <li class="nav-item px-lg-4 dropdown">
+              <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown">COMMUNITY</a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">이벤트</a>
+                <a href="#" class="dropdown-item">후기</a>
+                <a href="#" class="dropdown-item">뉴스레터</a>
+              </div>
+            
+            <li class="nav-item px-lg-4 dropdown">
+              <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown">ABOUT SKIN</a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">피부관리</a>
+                <a href="#" class="dropdown-item">피부솔루션</a>
+                <a href="#" class="dropdown-item">피부예약</a>
+              </div>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-dark" href="store.html">BRAND</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  <div class="btn_wrap">
+    <button class="btn0" id="btn">all</button>
+    <button class="btn1" id="btn">btn1</button>
+    <button class="btn2" id="btn">btn2</button>
+    <button class="btn3" id="btn">btn3</button>
+  </div>
+
+  <section class="page-section p-10">
+    <div class="bcontainer">
+    
+      <div class="card one">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+      <div class="card two">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+      <div class="card one">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+      <div class="card three">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+      <div class="card one">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+      <div class="card two">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+      <div class="card one">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+      <div class="card three">
+        <img src="./img/testimg.jpg" alt="card">
+        <div class="card_body">
+          <h4 class="card_title">name</h4>
+          <p class="card_text">position</p>
+          <div class="btn">
+            <a href="tel:010.0000.0000">010.0000.0000</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+      </div>
+    </footer>
+
+
+
+
+  </body>
+
+</html>
