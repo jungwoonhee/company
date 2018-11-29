@@ -55,6 +55,14 @@
 
   <body>
   <style>
+   .navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+    .navbar-dark .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+}
 
     #mainNav .container{width: 70%;border: 2.5px solid #595959;padding: 4px;background: rgba(255,255,255,0.8);}
     #navbarResponsive div a{font-size: 14px;text-align: center;}
@@ -78,9 +86,10 @@
     #btn{padding: 5px 10px;border-radius: 5px;text-align: center;width: 50px;}
     #btn a{color: #fff}
 
-    .btn_wrap{width: 1000px;margin: 0 auto;text-align: center;margin-top: 50px;margin-bottom: 50px;}
+    .btn_wrap{width: 100%;margin: 0 auto;text-align: center;margin-top: 50px;margin-bottom: 50px;}
     .btn_wrap button{border: none;height: 40px;padding: 0 10px;border-right: 5px;}
     .btn_wrap button.active{background: #aaf;}
+    .btn_wrap span{font-size:32px;background: rgba(255,255,255,0.4);padding: 10px;font-weight: bold;}
 
   </style>
    
@@ -137,6 +146,10 @@
     </nav>
 
   <div class="btn_wrap">
+    <span style="">피부타입별</span>
+  </div>
+
+  <div class="btn_wrap">
     <button class="btn0" id="btn">all</button>
     <button class="btn1" id="btn">btn1</button>
     <button class="btn2" id="btn">btn2</button>
@@ -144,85 +157,63 @@
   </div>
 
   <section class="page-section p-10">
-    <div class="bcontainer">
+    <div class="bcontainer contianer-fluid p-0">
     
-      <div class="card one">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+      <div class="row">
+        <div class="card one p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
-      </div>
-      <div class="card two">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+        <div class="card two p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
-      </div>
-      <div class="card one">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+        <div class="card one p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
-      </div>
-      <div class="card three">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+        <div class="card three p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
-      </div>
-      <div class="card one">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+        <div class="card one p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
-      </div>
-      <div class="card two">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+        <div class="card two p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
-      </div>
-      <div class="card one">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+        <div class="card one p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
-      </div>
-      <div class="card three">
-        <img src="./img/testimg.jpg" alt="card">
-        <div class="card_body">
-          <h4 class="card_title">name</h4>
-          <p class="card_text">position</p>
-          <div class="btn">
-            <a href="tel:010.0000.0000">010.0000.0000</a>
+        <div class="card three p-0">
+          <img src="./img/testimg.jpg" alt="card">
+          <div class="card_body">
+            <h4 class="card_title">name</h4>
+            <p class="card_text">position</p>
           </div>
         </div>
       </div>
