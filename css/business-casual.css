@@ -138,6 +138,7 @@ p {
   .intro .intro-text {
     width: 45%;
   }
+  #mainNav div a{margin-left: 5px;}
  
 }
 
